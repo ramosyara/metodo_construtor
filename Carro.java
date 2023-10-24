@@ -4,8 +4,38 @@ public class Carro{
     private int aro;
     private double valorCarro; 
 
-    public Carro(){
+    public int getAro(){
+        return aro;
+    }
 
+    public void setAro (int aro){
+        this.aro = aro;
+    }
+
+
+    public String getModelo(){
+        return modelo;
+    }
+    public void setModelo (String modelo){
+        this.modelo = modelo;
+    }
+    
+    public Double getvalorCarro(){
+        return valorCarro;
+    }
+    public void setValorCarro (Double valorCarro){
+        this.valorCarro = valorCarro;
+    }
+
+    public String getCor(){
+        return cor;
+    }
+    public void setCor (String cor){
+        this.cor = cor;
+    }
+
+
+    public Carro(){
 
     }
     public Carro(int aro){
@@ -15,7 +45,7 @@ public class Carro{
         this.aro=aro;
         this.modelo=modelo;
     }
-    public Carro(int aro, String modelo, String cor, double valorCarro){
+    public Carro(int aro, String modelo, double valorCarro, String cor){
         this.aro=aro;
         this.modelo=modelo;
         this.valorCarro=valorCarro;
